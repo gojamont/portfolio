@@ -1,0 +1,22 @@
+body{
+    background: url('background_image.jpg') no-repeat;
+    background-size: cover;
+}
+
+.main_view {
+    height: inherit;
+}
+
+html {
+    height: 100vh;
+}
+
+.nav.justify-content-center{
+    margin: 1%;
+    padding: 2%;
+}
+
+a.nav-link {
+    color:#001b2e; 
+    padding: 1.5em;
+}
