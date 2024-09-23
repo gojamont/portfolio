@@ -3,6 +3,7 @@ clear();
 
 document.addEventListener("DOMContentLoaded", () => {
   display();
+  show();
 });
 
 /* a function for displaying sections by pressing on navbar links*/
@@ -49,6 +50,24 @@ function show_single_element() {
       element.style.display = "none";
     } else {
       element.style.display = "flex";
+    }
+  });
+}
+
+function show() {
+  const modal_box = document.querySelector(".modal_box");
+
+  document.querySelector("#show").addEventListener("click", (e) => {
+    e.preventDefault();
+    modal_box.style.display = "block";
+    modal_box.classList.add("active");
+  });
+
+  modal_box.addEventListener("dblclick", (e) => {
+    if (modal_box.classList.contains('active')) {
+      e.preventDefault();
+      modal_box.style.display = "none";
+      modal_box.classList.remove("active");
     }
   });
 }

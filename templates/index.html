@@ -29,61 +29,122 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div class="wrapper">
     <form action="/">
-      <div class="wrapper">
-      <!--defining nav bar-->
-      <ul class="nav justify-content-center sticky-top">
-        <li class="nav-item">
-          <a class="nav-link" data-target="#home" href="#home"> Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-target="#about" href="#about"> About me </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-target="#projects" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-target="#contact" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <!--main content of the page-->
-      <div class="main_view">
-        <div id="home">
-          <h2> Hello, world!</h2>
-          <p> Goja Montvilaite - Web Designer</p>
-          <a type="button" class="btn btn-outline-light" href="{{ url_for('static', filename='cv.pdf') }}" download>Resume</a>
-        </div>
-        <div id="about">
-          <div class="image_description">
-            <img src="\static\profile.jpeg" alt="profile" id = "picture">
-            <div>
-            <h2 style="text-align: center;"> About me</h2>
-            <p>A girl combining software and culture.</p>
-            <div class="icon_container">
-              <img src="static\js.svg" alt="JS" >
-              <img src="static\css.svg" alt="CSS">
-              <img src="static\html.svg" alt="HTML">
+        <!--defining nav bar-->
+        <ul class="nav justify-content-center sticky-top">
+          <li class="nav-item">
+            <a class="nav-link" data-target="#home" href="#home"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#about" href="#about"> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#projects" href="#projects"
+              >Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-target="#contact" href="#contact"
+              >Contact
+            </a>
+          </li>
+        </ul>
+        <!--main content of the page-->
+        <div class="main_view">
+          <div id="home">
+            <h2>Hello, world!</h2>
+            <p>Goja Montvilaite - Web Designer</p>
+            <a
+              type="button"
+              class="btn btn-outline-light"
+              href="{{ url_for('static', filename='cv.pdf') }}"
+              download
+              >Resume
+            </a>
+          </div>
+          <div id="about">
+            <div class="image_description">
+              <img src="\static\profile.jpeg" alt="profile" id="picture" />
+              <div>
+                <h2 style="text-align: center">About me</h2>
+                <p>A girl combining software and culture.</p>
+                <div class="icon_container">
+                  <img src="static\js.svg" alt="JS" />
+                  <img src="static\css.svg" alt="CSS" />
+                  <img src="static\html.svg" alt="HTML" />
+                </div>
+              </div>
             </div>
-
           </div>
+          <div id="projects">
+            <h2>Projects</h2>
+            <button class="btn btn-outline-light" id="show">See projects</button>
+            <div class="modal_box">
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="static\website1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Travel Eco - Wordpress blog</h5>
+                      Made with: Wordpress, includes SEO <br>
+                      Challenges: Learning how SEO works
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static\website2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex d-md-block">
+                      <h5>Renatos sodai - family business website</h5>
+                      Made with: Python, JS, CSS, HTML <br>
+                      Challenges: responsive design for different screen sizes and operating systems
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static\website3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>E-commerce site - Auctions model</h5>
+                      Made with: Django, HTML, CSS <br>
+                      Challenges: Interactions between models, views and django application.
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="projects">
-          <h2> Projects</h2>
-          <button class="btn btn-outline-light">See projects</button>
-        </div>
-        <div id="contact">
-          <h2> Contact</h2>
-          <div>
-            <a href="https://www.facebook.com/goja.montvilaite/"><img src="static\fb.svg" height="50" width="50" alt="Facebook"></a>
-            <a href="https://github.com/gojamont"><img src="static\github.svg" height="50" width="50"alt="Github"></a>
-            <a href="https://www.instagram.com/citrusiuke/"><img src="static\instagram.svg" height="50" width="50"alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/gojamontvilaite/"><img src="static\linkedin.svg" height="50" width="50"alt="Linkedin"></a>
-
+          <div id="contact">
+            <h2>Contact</h2>
+            <div>
+              <a href="https://www.facebook.com/goja.montvilaite/"><img src="static\fb.svg" height="50" width="50" alt="Facebook"/></a>
+              <a href="https://github.com/gojamont"><img src="static\github.svg" height="50" width="50" alt="Github"/></a>
+              <a href="https://www.instagram.com/citrusiuke/"><img src="static\instagram.svg" height="50" width="50" alt="Instagram"/></a>
+              <a href="https://www.linkedin.com/in/gojamontvilaite/"><img src="static\linkedin.svg" height="50" width="50" alt="Linkedin"/></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </form>
-  </body>
+    <script type="text/javascript">
+      $(function() {
+        $('#myCarousel').carousel({
+          interval: 2500
+        });
+      });
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </div>
+    </body>
 </html>
