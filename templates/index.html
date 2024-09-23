@@ -30,24 +30,60 @@
   </head>
   <body>
     <form action="/">
+      <div class="wrapper">
       <!--defining nav bar-->
-      <ul class="nav justify-content-center">
+      <ul class="nav justify-content-center sticky-top">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#about">About me</a>
+          <a class="nav-link" data-target="#home" href="#home"> Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" data-target="#about" href="#about"> About me </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" data-target="#projects" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-target="#contact" href="#contact">Contact</a>
         </li>
       </ul>
       <!--main content of the page-->
       <div class="main_view">
-        <div id="about"> Hello, my name is </div>
-        <div id="projects">Slim shady</div>
-        <div id="contact">Baby give me one more time</div>
+        <div id="home">
+          <h2> Hello, world!</h2>
+          <p> Goja Montvilaite - Web Designer</p>
+          <a type="button" class="btn btn-outline-light" href="{{ url_for('static', filename='cv.pdf') }}" download>Resume</a>
+        </div>
+        <div id="about">
+          <div class="image_description">
+            <img src="\static\profile.jpeg" alt="profile" id = "picture">
+            <div>
+            <h2 style="text-align: center;"> About me</h2>
+            <p>A girl combining software and culture.</p>
+            <div class="icon_container">
+              <img src="static\js.svg" alt="JS" >
+              <img src="static\css.svg" alt="CSS">
+              <img src="static\html.svg" alt="HTML">
+            </div>
+
+          </div>
+          </div>
+        </div>
+        <div id="projects">
+          <h2> Projects</h2>
+          <button class="btn btn-outline-light">See projects</button>
+        </div>
+        <div id="contact">
+          <h2> Contact</h2>
+          <div>
+            <a href="https://www.facebook.com/goja.montvilaite/"><img src="static\fb.svg" height="50" width="50" alt="Facebook"></a>
+            <a href="https://github.com/gojamont"><img src="static\github.svg" height="50" width="50"alt="Github"></a>
+            <a href="https://www.instagram.com/citrusiuke/"><img src="static\instagram.svg" height="50" width="50"alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/gojamontvilaite/"><img src="static\linkedin.svg" height="50" width="50"alt="Linkedin"></a>
+
+          </div>
+        </div>
       </div>
+    </div>
     </form>
   </body>
 </html>
