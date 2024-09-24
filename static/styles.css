@@ -163,11 +163,6 @@ a.nav-link:hover {
     object-fit: scale-down;
 }
 
-
-.carousel-item {
-  /*  overflow: visible;*/
-}
-
 .carousel-caption {
     position: absolute;
     flex-direction: column;
