@@ -32,12 +32,14 @@ div {
     display: flex;
 }
 
+/* wrapper sets an undertone to a background picture*/
 .wrapper {
     height: 100%;
     box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .2);
     width: fit-content;
 }
 
+/* main view after the navbar*/
 .main_view {
     width: 80%;
     margin: auto;
@@ -54,6 +56,7 @@ div {
     line-height: 3rem;
 }
 
+/*nav bar using bootstrap framework*/
 .nav.justify-content-center {
     padding: 0.70em 0;
     z-index: 2;
@@ -65,9 +68,11 @@ a.nav-link:hover {
     padding: 1.5em;
 }
 
+/* tags for every div linking to the corresponding nav links*/
 #about,
 #projects,
-#contact, #home {
+#contact,
+#home {
     height: 100vh;
     width: 100vw;
     align-items: center;
@@ -88,6 +93,7 @@ a.nav-link:hover {
     margin: 1%
 }
 
+/* image bar in "about" page*/
 .image_description {
     text-align: center;
     align-items: center;
@@ -96,6 +102,7 @@ a.nav-link:hover {
 
 }
 
+/* tags a textbox by the image in "about" page*/
 .image_description_text p {
     margin-top: 0;
     margin: 5%;
@@ -106,6 +113,7 @@ a.nav-link:hover {
     flex-direction: column;
 }
 
+/* "about" page image */
 .image_description #picture {
     border-radius: 60%;
     width: 40%;
@@ -113,7 +121,7 @@ a.nav-link:hover {
     object-fit: cover;
 }
 
-
+/* div for icons located below the image_description text*/
 .icon_container {
     justify-content: center;
 }
@@ -124,6 +132,7 @@ a.nav-link:hover {
     fill: #ffffff;
 }
 
+/* projects gallery field*/
 .modal_box {
     display: none;
     position: fixed;
@@ -135,11 +144,13 @@ a.nav-link:hover {
     align-items: center;
 }
 
+/* inner part of the slider*/
 .carousel-inner {
     height: auto;
     overflow: auto;
 }
 
+/* tags every slide r*/
 .carousel.slide {
     height: auto;
     width: 100%;
@@ -152,8 +163,9 @@ a.nav-link:hover {
     object-fit: scale-down;
 }
 
+
 .carousel-item {
-    overflow: visible;
+  /*  overflow: visible;*/
 }
 
 .carousel-caption {
