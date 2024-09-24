@@ -17,7 +17,7 @@ html {
 
 
 body {
-    background: url('background_image.jpg') no-repeat;
+    background: url('/static/photos/background_image.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
