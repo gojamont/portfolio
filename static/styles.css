@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Inconsolata"
+    font-family: "Inconsolata";
+    color: white;
+    align-items: center;
 }
 
 @font-face {
@@ -15,26 +17,25 @@ html {
 
 
 body {
-    background: url('background_image.jpg') repeat-y;
+    background: url('background_image.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: hidden;
     text-align: center;
-    overflow-wrap: wrap;
-    color: white !important;
 }
+
 
 div {
     display: flex;
-    align-items: center;
 }
 
 .wrapper {
     height: 100%;
     box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .2);
+    width: fit-content;
 }
 
 .main_view {
@@ -64,20 +65,9 @@ a.nav-link:hover {
     padding: 1.5em;
 }
 
-#home.active {
-    height: 100vh;
-    width: 100vw;
-}
-
-#home {
-    height: 80vh;
-    margin-bottom: 2em;
-    width: 100vw;
-}
-
 #about,
 #projects,
-#contact {
+#contact, #home {
     height: 100vh;
     width: 100vw;
     align-items: center;

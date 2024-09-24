@@ -3,6 +3,7 @@ clear();
 
 document.addEventListener("DOMContentLoaded", () => {
   display();
+  show_single_element();
   show();
 });
 
@@ -12,7 +13,6 @@ function display() {
 
   document.querySelectorAll(".nav-link").forEach((element) => {
     element.addEventListener("click", () => {
-      document.querySelector("body").style.backgroundColor = "#94c48a60";
       document.querySelectorAll(".main_view > div").forEach((div) => {
         div.removeAttribute("class");
       });
