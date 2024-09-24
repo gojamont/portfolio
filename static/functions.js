@@ -59,12 +59,12 @@ function show() {
 
   document.querySelector("#show").addEventListener("click", (e) => {
     e.preventDefault();
-    modal_box.style.display = "block";
+    modal_box.style.display = "flex";
     modal_box.classList.add("active");
   });
 
   modal_box.addEventListener("dblclick", (e) => {
-    if (modal_box.classList.contains('active')) {
+    if (modal_box.classList.contains("active")) {
       e.preventDefault();
       modal_box.style.display = "none";
       modal_box.classList.remove("active");
