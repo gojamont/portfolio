@@ -1,5 +1,5 @@
 # Portfolio
-A short description of your project goes here.
+Here you can find a short description of Portfolio project
 
 ## Table of Contents
 - [Overview](#overview)
@@ -8,7 +8,6 @@ A short description of your project goes here.
     - [Projects](#projects)
     - [Contact](#contact)
 - [Technologies used](#technologies)
-- [Features](#features)
 
 ## Demo 
 https://github.com/user-attachments/assets/fd760cf6-00f3-4bea-90e1-346f6cdea68a
@@ -27,6 +26,6 @@ This section displays the projects done. You can access them by pressing on See 
 Contact page displays links to all main sources of contact including Facebook, Instagram, Linkedin. 
 
 # Technologies used
+Webpage is built on HTML, CSS, JS and Python. Its style is also using Bootstrap framework. 
 
-# Features
 
