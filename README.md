@@ -15,8 +15,7 @@ A short description of your project goes here.
 Video
 
 # Overview
-Overview page contains descriptions of main sections of the website. This page is user-friendly and easy to navigate. 
-
+Overview page contains descriptions of main sections of the website. This page is user-friendly and easy to navigate. You can welcome to discover all the sections one by one :smile:
 ## Home
 Home is a home page. This is the first page you see when entering the webpage. If navigation bar section "Home" is clicked, background color will change and you will discover a new home page.
 
