@@ -9,13 +9,12 @@ A short description of your project goes here.
     - [Contact](#contact)
 - [Technologies used](#technologies)
 - [Features](#features)
-- [Contact](#contact)
 
 ## Demo 
-Video
+
 
 # Overview
-Overview page contains descriptions of main sections of the website. This page is user-friendly and easy to navigate. You can welcome to discover all the sections one by one :smile:
+Overview page contains descriptions of main sections of the website. This page is user-friendly and easy to navigate. You can welcome to discover all the sections one by one :blush:
 ## Home
 Home is a home page. This is the first page you see when entering the webpage. If navigation bar section "Home" is clicked, background color will change and you will discover a new home page.
 
@@ -23,7 +22,12 @@ Home is a home page. This is the first page you see when entering the webpage. I
 About page is a short self-introduction. Here you can find a foto of developer and main skills. 
 
 ## Projects
-
+This section displays the projects done. You can access them by pressing on See Projects button and then a short gallery will pop up :blush:.
 
 ## Contact
+Contact page displays links to all main sources of contact including Facebook, Instagram, Linkedin. 
+
+# Technologies used
+
+# Features
 
